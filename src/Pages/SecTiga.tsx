@@ -8,6 +8,8 @@ import {
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
+import { Meteors } from "@/components/ui/meteors";
+
 function SecTiga() {
   const words1 = `  You're the best, I'm so happy I met you! I'm always here if you need
           someone. Please keep living because you worth so much to me
@@ -54,6 +56,8 @@ function SecTiga() {
           fill="white"
         />
         <BackgroundLines>
+          {" "}
+          <Meteors number={50} />
           <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
             <div className="absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
               <TextGenerateEffect words={words1} />

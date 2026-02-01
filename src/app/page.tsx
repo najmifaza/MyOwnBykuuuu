@@ -6,7 +6,7 @@ export default function Home() {
     <>
       {/* <Secsatu></Secsatu> */}
       <SecTiga></SecTiga>
-      <SecDua></SecDua>
+      {/* <SecDua></SecDua> */}
     </>
   );
 }

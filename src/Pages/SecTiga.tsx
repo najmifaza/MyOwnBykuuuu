@@ -45,13 +45,13 @@ function SecTiga() {
     {
       title: "New Zealand",
       image:
-        "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://instagram.fcgk41-1.fna.fbcdn.net/v/t51.75761-15/504147705_18065584997490471_1913236056416754410_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=104&ig_cache_key=MzY0OTg0OTcwOTc1MTM3ODI2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5oZHIuQzMifQ%3D%3D&_nc_ohc=WvI_DtpXPSMQ7kNvwH0345L&_nc_oc=AdkSf_ds56XtDkCiKiB-3tw8vII8Zk0xUUqV_XBYtvfnpRoMf1V34b_9_M-JlX1nsK4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk41-1.fna&_nc_gid=SFuNVhjgosCAYEUTOLC3MQ&oh=00_AfsiRLE1DhaMedVXYv7BNXik38IMU_QGaY5MAJ-uBnPXKQ&oe=69852D59",
       className: "absolute top-24 left-[45%] rotate-[-7deg]",
     },
     {
       title: "Canada",
       image:
-        "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://instagram.fcgk41-1.fna.fbcdn.net/v/t51.75761-15/504205567_18065585726490471_580472762980436920_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=101&ig_cache_key=MzY0OTg1MjkwMjcwNzA1Mzc3Nw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5oZHIuQzMifQ%3D%3D&_nc_ohc=DYfm-3dwksQQ7kNvwGfEVtm&_nc_oc=Adl3mayA84iPi5zEYFa0Hik0AGJHASOHsWP4BNEuuZyjy4cJ6lvgvhk8nHXTnD41Sik&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk41-1.fna&_nc_gid=SFuNVhjgosCAYEUTOLC3MQ&oh=00_AfsnNKWf0IBfC9CY8TmBoSuIlMjrHSwvl0psMxRjr51I6w&oe=6985172D",
       className: "absolute top-8 left-[30%] rotate-[4deg]",
     },
   ];

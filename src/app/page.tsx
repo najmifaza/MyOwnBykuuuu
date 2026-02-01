@@ -5,8 +5,8 @@ export default function Home() {
   return (
     <>
       {/* <Secsatu></Secsatu> */}
-      <SecDua></SecDua>
       <SecTiga></SecTiga>
+      <SecDua></SecDua>
     </>
   );
 }

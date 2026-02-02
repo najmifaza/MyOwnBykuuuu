@@ -58,7 +58,7 @@ function SecTiga() {
         <BackgroundLines>
           {" "}
           <Meteors number={50} />
-          <DraggableCardContainer className="relative flex min-h-screen w-full items-center justify-center overflow-clip">
+          <DraggableCardContainer className=" relative flex min-h-full w-full items-center justify-center overflow-clip">
             <div className="absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
               <TextGenerateEffect words={words1} />
               {/* <TextGenerateEffect words={"najmi - 18/2/26"} /> */}

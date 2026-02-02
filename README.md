@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# MyOwnByKu 💫
 
-## Getting Started
+Sebuah *personal showcase website* yang interaktif dan estetis, dibangun menggunakan teknologi web modern. Project ini dirancang untuk menampilkan galeri foto kenangan dengan pesan personal, dibalut dengan animasi yang halus dan musik latar.
 
-First, run the development server:
+## 🌟 Fitur Utama
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Interactive Draggable Cards**: Kartu galeri yang bisa digeser (drag-and-drop) untuk pengalaman pengguna yang menyenangkan.
+* **Rich Animations**: Menggunakan berbagai efek visual seperti:
+    * *Spotlight Effect* pada background.
+    * *Meteors Effect* (animasi meteor jatuh).
+    * *Text Generate Effect* untuk memunculkan teks kata per kata.
+    * *Background Lines* yang dinamis.
+* **Background Music**: Pemutar musik otomatis yang menemani pengguna saat menjelajahi halaman.
+* **Modern UI/UX**: Tampilan *Dark Mode* yang elegan dengan elemen desain dari Aceternity UI / Framer Motion.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Teknologi yang Digunakan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project ini dibangun dengan *stack* teknologi terbaru:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework**: [Next.js 16](https://nextjs.org/) (App Router)
+* **Library**: [React 19](https://react.dev/)
+* **Bahasa**: [TypeScript](https://www.typescriptlang.org/)
+* **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+* **Animation**: [Framer Motion](https://www.framer.com/motion/) & `tw-animate-css`
+* **Icons**: [Lucide React](https://lucide.dev/)
+* **Utilities**: `clsx`, `tailwind-merge`
 
-## Learn More
+## 📂 Struktur Project
 
-To learn more about Next.js, take a look at the following resources:
+Beberapa komponen kunci dalam project ini:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* `src/app/page.tsx`: Halaman utama yang memuat `FirstPage`.
+* `src/Pages/FirstPage.tsx`: Komponen utama berisi logika kartu, teks animasi, dan data foto.
+* `src/components/ui/`: Kumpulan komponen UI reusable (Card, Spotlight, Meteors, dll).
+* `src/components/ui/BackgroundMusic.tsx`: Komponen untuk menangani audio latar.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Cara Menjalankan
 
-## Deploy on Vercel
+Ikuti langkah-langkah berikut untuk menjalankan project ini di komputer lokal Anda:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1.  **Clone repositori:**
+    ```bash
+    git clone [https://github.com/username-anda/myownbykuuuu.git](https://github.com/username-anda/myownbykuuuu.git)
+    cd myownbykuuuu
+    ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2.  **Install dependencies:**
+    Pastikan Anda menggunakan Node.js versi terbaru (disarankan v20+ karena menggunakan Next.js 16).
+    ```bash
+    npm install
+    # atau
+    pnpm install
+    # atau
+    yarn install
+    ```
+
+3.  **Jalankan server development:**
+    ```bash
+    npm run dev
+    # atau
+    pnpm dev
+    ```
+
+4.  **Buka di browser:**
+    Akses [http://localhost:3000](http://localhost:3000) untuk melihat hasilnya.
+
+## 📝 Catatan Konfigurasi
+
+* **Gambar**: Saat ini link gambar di `FirstPage.tsx` menggunakan URL eksternal (Instagram CDN). Disarankan untuk menggantinya dengan gambar lokal di folder `public/` atau hosting gambar permanen agar tidak *expired*.
+* **Musik**: File audio terletak di `public/backsound.mp3`. Anda bisa menggantinya dengan file audio lain yang memiliki nama yang sama atau mengubah *path* di komponen `BackgroundMusic`.
+
+## 🤝 Credits
+
+* UI Components inspired by [Aceternity UI](https://ui.aceternity.com/)
+* Built with ❤️ by **Najmi Faza**
+
+---
+*Dibuat untuk tujuan personal dan pembelajaran pengembangan web kreatif.*

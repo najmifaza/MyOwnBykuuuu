@@ -21,7 +21,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
-function SecTiga() {
+function FirstPage() {
   const words1 = `  You're the best, I'm so happy I met you! I'm always here if you need
           someone. Please keep living because you worth so much to me
 `;
@@ -80,31 +80,25 @@ function SecTiga() {
                 </DialogTrigger>
                 <DialogContent>
                   <DialogHeader>
-                    <DialogTitle>Sticky Footer</DialogTitle>
+                    <DialogTitle>Dear blabalbal</DialogTitle>
                     <DialogDescription>
-                      This dialog has a sticky footer that stays visible while
-                      the content scrolls.
+                      jksdncjesnckdjcnkndjncjencjcneicuhehbcehb
                     </DialogDescription>
                   </DialogHeader>
                   <div className="no-scrollbar -mx-4 max-h-[50vh] overflow-y-auto px-4">
-                    {Array.from({ length: 10 }).map((_, index) => (
+                    {Array.from({ length: 1 }).map((_, index) => (
                       <p key={index} className="mb-4 leading-normal">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed do eiusmod tempor incididunt ut labore et dolore
-                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu
-                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit
-                        anim id est laborum.
+                        Gatau anj ak nanti mau nulis apa disini liat ajalah
+                        bingung taik, ak be masih bingung mau tak pacarin aoa
+                        engga, soale males pacaraan wleee
                       </p>
                     ))}
                   </div>
                   <DialogFooter>
                     <DialogClose asChild>
-                      <Button variant="outline">Close</Button>
+                      <Button variant="destructive">Close</Button>
                     </DialogClose>
+                    <Button variant="secondary">MAUUUUUUU</Button>
                   </DialogFooter>
                 </DialogContent>
               </Dialog>
@@ -130,4 +124,4 @@ function SecTiga() {
   );
 }
 
-export default SecTiga;
+export default FirstPage;

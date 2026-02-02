@@ -9,6 +9,17 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Meteors } from "@/components/ui/meteors";
+import { Button } from "@/components/ui/button";
+import {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 
 function SecTiga() {
   const words1 = `  You're the best, I'm so happy I met you! I'm always here if you need
@@ -22,63 +33,100 @@ function SecTiga() {
       title: "13 - 9 - 2008",
       image:
         "https://instagram.fcgk41-1.fna.fbcdn.net/v/t51.75761-15/504213228_18065587556490471_4916763991456069309_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ig_cache_key=MzY0OTg2NTM4MzA5MzUyOTQ5Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTQ0MC5zZHIuQzMifQ%3D%3D&_nc_ohc=tXhKE99NSLQQ7kNvwFaLFMj&_nc_oc=AdnuXcBZFAm5dYH846NJkj-J2jhhgnu0hQpPXFzRFgPTlNEPOH1uVDe99YGzY0En6fM&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk41-1.fna&_nc_gid=IuOy80ZkdpQ0b56MvVA7QA&oh=00_Aftr6IaLIpAVZqTiat0K0XsFZ067h24q9L9wRfG9vSlv4g&oe=69854D77",
-      className: "absolute top-40 left-[25%] rotate-[-7deg]",
+      className: "absolute top-40 left-[25%] rotate-[-7deg] translate-y-20",
     },
     {
       title: "Ramadhani",
       image: "/image.png",
-      className: "absolute top-32 left-[55%] rotate-[10deg]",
+      className: "absolute top-32 left-[55%] rotate-[10deg] translate-y-20",
     },
     {
       title: "Septia",
       image:
         "https://instagram.fcgk41-1.fna.fbcdn.net/v/t51.75761-15/504147705_18065584997490471_1913236056416754410_n.jpg?stp=dst-jpegr_e35_tt6&_nc_cat=104&ig_cache_key=MzY0OTg0OTcwOTc1MTM3ODI2NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5oZHIuQzMifQ%3D%3D&_nc_ohc=WvI_DtpXPSMQ7kNvwH0345L&_nc_oc=AdkSf_ds56XtDkCiKiB-3tw8vII8Zk0xUUqV_XBYtvfnpRoMf1V34b_9_M-JlX1nsK4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk41-1.fna&_nc_gid=SFuNVhjgosCAYEUTOLC3MQ&oh=00_AfsiRLE1DhaMedVXYv7BNXik38IMU_QGaY5MAJ-uBnPXKQ&oe=69852D59",
-      className: "absolute top-24 left-[45%] rotate-[-7deg]",
+      className: "absolute top-24 left-[45%] rotate-[-7deg] translate-y-20",
     },
     {
       title: "Gizka",
       image:
         "https://instagram.fcgk41-1.fna.fbcdn.net/v/t51.75761-15/504334676_18065585744490471_3974522091316086731_n.jpg?stp=dst-jpegr_e35_s720x720_tt6&_nc_cat=104&ig_cache_key=MzY0OTg1MjkwMjIxMjM0ODMzMA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTA4MC5oZHIuQzMifQ%3D%3D&_nc_ohc=kEC5zvl7tN8Q7kNvwE6K-nI&_nc_oc=AdlLfgm5t4GCUMxjvEZXWIlq3El69QH0-Og47XuxFA8shBoWrV27k8xAcTZwoAb_Pwc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fcgk41-1.fna&_nc_gid=Sm9YiK4n15ommFNsJPJNpg&oh=00_Aft8aMo_uk-FghBw1Hgs4u69HjwpmQ456QmaQnV0D49hYg&oe=698640DA",
-      className: "absolute top-8 left-[30%] rotate-[4deg]",
+      className: "absolute top-8 left-[30%] rotate-[4deg] translate-y-20",
     },
   ];
   return (
-    <>
-      <div className="relative flex h-200 w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center">
-        <div
-          className={cn(
-            "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
-            "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
-          )}
-        />
-        <Spotlight
-          className="-top-40 left-0 md:-top-20 md:left-60"
-          fill="white"
-        />
-        <BackgroundLines>
-          {" "}
-          <Meteors number={50} />
-          <DraggableCardContainer className=" relative flex min-h-full w-full items-center justify-center overflow-clip">
-            <div className="absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
-              <TextGenerateEffect words={words1} />
-              {/* <TextGenerateEffect words={"najmi - 18/2/26"} /> */}
-            </div>
-            {items.map((item) => (
-              <DraggableCardBody className={item.className}>
-                <img
-                  src={item.image}
-                  alt={item.title}
-                  className="pointer-events-none relative z-10 h-80 w-80 object-cover"
-                />
-                <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
-                  {item.title}
-                </h3>
-              </DraggableCardBody>
-            ))}
-          </DraggableCardContainer>
-        </BackgroundLines>
-      </div>
-    </>
+    <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black">
+      {/* <div className="relative flex h-200 w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center"> */}
+      <div
+        className={cn(
+          "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+          "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
+        )}
+      />
+      <Spotlight
+        className="-top-40 left-0 md:-top-20 md:left-60"
+        fill="white"
+      />
+      <BackgroundLines>
+        {" "}
+        <Meteors number={50} />
+        <DraggableCardContainer className=" relative flex min-h-full w-full items-center justify-center overflow-clip ">
+          <div className=" absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
+            <div>
+              {" "}
+              <TextGenerateEffect words={words1} className="mt-20 mb-7" />
+              <Dialog>
+                <DialogTrigger asChild>
+                  <Button variant="default">Sticky Footer</Button>
+                </DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle>Sticky Footer</DialogTitle>
+                    <DialogDescription>
+                      This dialog has a sticky footer that stays visible while
+                      the content scrolls.
+                    </DialogDescription>
+                  </DialogHeader>
+                  <div className="no-scrollbar -mx-4 max-h-[50vh] overflow-y-auto px-4">
+                    {Array.from({ length: 10 }).map((_, index) => (
+                      <p key={index} className="mb-4 leading-normal">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat. Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu
+                        fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit
+                        anim id est laborum.
+                      </p>
+                    ))}
+                  </div>
+                  <DialogFooter>
+                    <DialogClose asChild>
+                      <Button variant="outline">Close</Button>
+                    </DialogClose>
+                  </DialogFooter>
+                </DialogContent>
+              </Dialog>
+            </div>{" "}
+          </div>
+
+          {items.map((item) => (
+            <DraggableCardBody className={item.className}>
+              <img
+                src={item.image}
+                alt={item.title}
+                className="pointer-events-none relative z-10 h-80 w-80 object-cover"
+              />
+              <h3 className="mt-4 text-center text-2xl font-bold text-neutral-700 dark:text-neutral-300">
+                {item.title}
+              </h3>
+            </DraggableCardBody>
+          ))}
+        </DraggableCardContainer>
+      </BackgroundLines>
+      {/* </div> */}
+    </main>
   );
 }
 

@@ -9,23 +9,11 @@ import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import { cn } from "@/lib/utils";
 import { Spotlight } from "@/components/ui/spotlight";
 import { Meteors } from "@/components/ui/meteors";
-import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
+import PopUp from "@/components/ui/PopUp";
 
 function FirstPage() {
   const words1 = `  You're the best, I'm so happy I met you! I'm always here if you need
           someone. Please keep living because you worth so much to me
-`;
-  const words2 = ` a little aprecition massage for u
 `;
 
   const items = [
@@ -73,35 +61,10 @@ function FirstPage() {
           <div className=" absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
             <div>
               {" "}
-              <TextGenerateEffect words={words1} className="mt-20 mb-7" />
-              <Dialog>
-                <DialogTrigger asChild>
-                  <Button variant="default">Sticky Footer</Button>
-                </DialogTrigger>
-                <DialogContent>
-                  <DialogHeader>
-                    <DialogTitle>Dear blabalbal</DialogTitle>
-                    <DialogDescription>
-                      jksdncjesnckdjcnkndjncjencjcneicuhehbcehb
-                    </DialogDescription>
-                  </DialogHeader>
-                  <div className="no-scrollbar -mx-4 max-h-[50vh] overflow-y-auto px-4">
-                    {Array.from({ length: 1 }).map((_, index) => (
-                      <p key={index} className="mb-4 leading-normal">
-                        Gatau anj ak nanti mau nulis apa disini liat ajalah
-                        bingung taik, ak be masih bingung mau tak pacarin aoa
-                        engga, soale males pacaraan wleee
-                      </p>
-                    ))}
-                  </div>
-                  <DialogFooter>
-                    <DialogClose asChild>
-                      <Button variant="destructive">Close</Button>
-                    </DialogClose>
-                    <Button variant="secondary">MAUUUUUUU</Button>
-                  </DialogFooter>
-                </DialogContent>
-              </Dialog>
+              <div className="translate-y-20">
+                <TextGenerateEffect words={words1} className="mt-20 mb-7" />
+                <PopUp></PopUp>
+              </div>
             </div>{" "}
           </div>
 

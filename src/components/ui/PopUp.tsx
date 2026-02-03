@@ -9,12 +9,13 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import Link from "next/link";
 
 function PopUp() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default">Sticky Footer</Button>
+        <Button variant="default">Some Massage from me</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
@@ -36,7 +37,9 @@ function PopUp() {
           <DialogClose asChild>
             <Button variant="destructive">Close</Button>
           </DialogClose>
-          <Button variant="secondary">MAUUUUUUU</Button>
+          <Link href="https://web.whatsapp.com/" target="_blank">
+            <Button variant="secondary">MAUUUUUUU</Button>
+          </Link>
         </DialogFooter>
       </DialogContent>
     </Dialog>

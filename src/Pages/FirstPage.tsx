@@ -69,7 +69,7 @@ function FirstPage() {
           </div>
 
           {items.map((item) => (
-            <DraggableCardBody className={item.className}>
+            <DraggableCardBody key={item.title} className={item.className}>
               <img
                 src={item.image}
                 alt={item.title}

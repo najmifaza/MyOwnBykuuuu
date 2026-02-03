@@ -2,7 +2,7 @@
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
 import { cn } from "@/lib/utils";
-
+import PopUp from "@/components/ui/PopUp";
 export const TextGenerateEffect = ({
   words,
   className,
@@ -52,8 +52,8 @@ export const TextGenerateEffect = ({
 
   return (
     <div className={cn("font-bold", className)}>
-      <div className="mt-4">
-        <div className=" dark:text-white text-black text-5xl leading-snug tracking-wide">
+      <div className="mt-4 ">
+        <div className="dark:text-white text-black text-3xl md:text-5xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>

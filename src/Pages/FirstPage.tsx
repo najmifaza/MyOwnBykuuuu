@@ -42,7 +42,7 @@ function FirstPage() {
     },
   ];
   return (
-    <main className="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-black">
+    <main className="relative flex min-h-screen w-full items-start justify-center overflow-hidden bg-black">
       {/* <div className="relative flex h-200 w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center"> */}
       <div
         className={cn(
@@ -51,13 +51,12 @@ function FirstPage() {
         )}
       />
       <Spotlight
-        className="-top-40 left-0 md:-top-20 md:left-60"
+        className="-top-0 left-0 h-[200%] w-[200%] md:-top-20 md:left-60 md:h-[169%] md:w-[138%]"
         fill="white"
       />
-      <BackgroundLines>
-        {" "}
+      <BackgroundLines className="min-h-screen w-full flex flex-col">
         <Meteors number={50} />
-        <DraggableCardContainer className=" relative flex min-h-full w-full items-center justify-center overflow-clip ">
+        <DraggableCardContainer className="relative flex min-h-screen w-full flex-col items-start pt-20 md:flex-row md:items-center md:justify-center md:pt-0 overflow-hidden">
           <div className=" absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">
             <div>
               {" "}

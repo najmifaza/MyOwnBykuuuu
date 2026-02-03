@@ -15,7 +15,12 @@ function PopUp() {
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="default">Some Massage from me</Button>
+        <Button
+          variant="default"
+          className="w-1/2 text-sm py-6 md:w-auto md:py-2 md:text-base"
+        >
+          Some Massage from me
+        </Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>

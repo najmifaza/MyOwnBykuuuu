@@ -51,7 +51,10 @@ function FirstPage() {
         )}
       />
 
-      <BackgroundLines className="min-h-screen w-full flex flex-col">
+      <BackgroundLines
+        svgOptions={{ duration: 15 }}
+        className="min-h-screen w-full flex flex-col"
+      >
         <Meteors number={50} />
         <DraggableCardContainer className="relative flex min-h-screen w-full flex-col items-start pt-20 md:flex-row md:items-center md:justify-center md:pt-0 overflow-hidden">
           <div className=" absolute top-1/2 mx-auto max-w-2xl -translate-y-3/4 text-center text-9xl font-black text-neutral-400 md:text-4xl dark:text-neutral-800">

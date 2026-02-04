@@ -49,7 +49,7 @@ export default function BackgroundMusic() {
   };
 
   return (
-    <div className="fixed bottom-5 right-5 z-50">
+    <div className="fixed bottom-25 right-5 z-100">
       {/* Element Audio Tersembunyi */}
       <audio ref={audioRef} loop>
         <source src="/backsound.mp3" type="audio/mp3" />

@@ -50,10 +50,7 @@ function FirstPage() {
           "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
         )}
       />
-      <Spotlight
-        className="-top-0 left-0 h-[200%] w-[200%] md:-top-20 md:left-60 md:h-[169%] md:w-[138%]"
-        fill="white"
-      />
+
       <BackgroundLines className="min-h-screen w-full flex flex-col">
         <Meteors number={50} />
         <DraggableCardContainer className="relative flex min-h-screen w-full flex-col items-start pt-20 md:flex-row md:items-center md:justify-center md:pt-0 overflow-hidden">

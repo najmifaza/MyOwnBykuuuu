@@ -46,7 +46,7 @@ function FirstPage() {
       {/* <div className="relative flex h-200 w-full overflow-hidden rounded-md bg-black/[0.96] antialiased md:items-center md:justify-center"> */}
       <div
         className={cn(
-          "pointer-events-none absolute inset-0 [background-size:40px_40px] select-none",
+          "pointer-events-none absolute inset-0 bg-size-[40px_40px] select-none",
           "[background-image:linear-gradient(to_right,#171717_1px,transparent_1px),linear-gradient(to_bottom,#171717_1px,transparent_1px)]",
         )}
       />

@@ -1,4 +1,4 @@
-import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Github, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { FaTiktok } from "react-icons/fa";
 import Link from "next/link";
